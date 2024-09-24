@@ -1,14 +1,23 @@
 <script>
+import HomeComponents from './components/HomeComponents.vue';
+import About from './components/About.vue';
 import ServicesComponent from './components/ServicesComponent.vue'
+import Login from './components/Login.vue';
+import Signup from './components/Signup.vue';
 import ContactUs from './components/ContactUs.vue'
 import FooterComponent from './components/FooterComponent.vue';
-import About from './components/About.vue';
+
+
+
 
 export default {
   name: "App",
   components:{
+    HomeComponents,
     About,
     ServicesComponent,
+    Login,
+    Signup,
     ContactUs,
     FooterComponent
   },
@@ -22,46 +31,30 @@ export default {
 };
 </script>
 
-<template>
+
+ <template>
   <div class="nav-cont">
     <nav class="my-nav">
-      <!-- <div class="icon">Icon</div> -->
-     
-      <!-- <div class="links"></div> -->
-
       <ul>
-            <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/servixes">Services</router-link></li>
-          <li><router-link to="/contactUs">Contact</router-link></li>
-
-
+        <li><router-link to="/services">Services</router-link></li>
+        <li><router-link to="/login">Login</router-link></li>
+        <li><router-link to="/signup">Signup</router-link></li>
+        <li><router-link to="/contactUs">Contact</router-link></li>
       </ul>
-      
     </nav>
     <h2>{{ logo }}</h2>
-    
-    
-    </div>
-    <!-- <h1>{{ heading }}</h1> -->
-    <!-- <p>{{ description }}</p> -->
-      <!-- <button @click="learnMore">Learn more</button> -->
+  </div>
 
-  <!-- </div> -->
-  <div class="body-container">
-
-
-        <About/>
-      <ServicesComponent />
-     
-      <ContactUs/>
-
-    </div>
-    <FooterComponent/>
-<router-view></router-view>
- 
- 
+  <!-- The router-view is where the routed component will be displayed -->
+  
+  <router-view />
+  
+  <!-- Footer is static and not affected by routing -->
+  <FooterComponent />
 </template>
+
 
 
 <style scoped>
@@ -76,14 +69,17 @@ export default {
      height: 100px;
     /* width: 100%;   */
     align-items: center;
+    text-decoration: none;
+    
 }
 .my-nav {
+  text-decoration: none;
   display: flexbox;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   border:  4px solid lightcoral;
-  min-width: 30%;
+  width: 50%;
   border-radius:35%;
   color: orchid;
   background-color: white; 
@@ -96,13 +92,14 @@ export default {
 ul {
    display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   cursor: pointer;
+  text-decoration: none;
  
 }
 li {
+  text-decoration: none;
    display: flex;
   flex-wrap: wrap; 
   color: orchid;
@@ -126,6 +123,7 @@ font-family:'Courier New', Courier, monospace
 
 .body-container {
   background-color:white;
+  text-decoration: none;
 }
 
 </style>
