@@ -1,8 +1,9 @@
 <template>
     <div class="container">
-        <h3></h3>
-     
+        <h4> 
         © 2024 Shineville Auto-spa, All Rights Reserved
+        </h4>
+
     </div>
 </template>
 
@@ -30,5 +31,6 @@ width: 100%;
 text-align: center;
 font-weight: bold;
 border-radius:50px;
+color: blue;
 }
 </style>

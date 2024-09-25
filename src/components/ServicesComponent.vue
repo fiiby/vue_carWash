@@ -2,6 +2,18 @@
 */
    <template>
   <div class="root-div">
+    <section id="testimonials">
+      <h3>Customer Testimonials</h3>
+      <div class="root-div">
+        <div class="serv-cont">
+          <!-- Loop through testimonials using v-for -->
+          <div class="card1" v-for="(item, index) in items" :key="index">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <button @click="fetchData()"> Get Data</button>
     <div class="services-container">
       <!-- Loop through services using v-for -->
@@ -23,92 +35,36 @@ export default {
   // name:"app",
   data() {
     return  {
+      data() {
+    return {
+      items: [
+        {
+          name: "M Kim Wandia",
+          description:
+            "Auto Spa is the best. Had a spa day for my car and they transformed it from dirty and messy to squeaky clean. It's looking and feeling fresh and brand new. Thank you so much. Will definitely recommend to everyone!",
+        },
+        {
+          name: "Jamess Gatereh",
+          description:
+            "Good work, I was there yesterday & the work done was beyond my expectations especially interior upholstery. Keep up the good work guys. It's like magic happened & still is dry, no taking out the interior main carpet & seats.",
+        },
+        {
+          name: "M Kim Wandia",
+          description:
+            "Had a spa day for my car and they transformed it from dirty and messy to squeaky clean. It's looking and feeling fresh and brand new. Thank you so much. Will definitely recommend to everyone!",
+        },
+        {
+          name: "Kelly Hendersone",
+          description:
+            "The best car detailing service I have ever experienced. Great attention to detail, and very professional. Shineville Auto Spa made my car look brand new again. Fantastic service!",
+        },
+      ],
+    };
+  },
+    },
+    {
       services:null,
-      // services: [
-      //   {
-      //     clientname: "M Kim Wandia",
-      //     description:
-      //       "Auto Spa is the best. Had a spa day for my car and they transformed it from dirty and messy to squeaky clean. It's looking and feeling fresh and brand new. Thank you so much. Will definitely recommend to everyone!",
-          
-      //   },
-      //   {
-      //     description:
-      //       "Amazing service! My car feels brand new. Highly recommended for anyone who wants their vehicle cleaned thoroughly.",
-      //       clientname: "Adam smith",
-      //   },
-      //   {
-      //     description:
-      //       "Good work, I was there yesterday & the work done was beyond my expectations especially interior upholstery. Keep up the good work guys. It's like magic happened & still is dry, no taking out the interior main carpet & seats.",
-      //       clientname: "Jamess Gatere",
-          
-      //   },
-   
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "lilly hunter",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "abdallha issa",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "raj kumar",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "dana khatiib",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "kellly henderson",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "rodolfo adam",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "shishita ralf",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "salman ali",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "ezz samuel",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "antoni fillip",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "janet jezee",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "allan fudin",
-      //   },
-      //   {
-      //     description:
-      //       "The best car detailing service I have ever experienced. Great attention to detail, and very professional.",
-      //       clientname: "juma chadan",
-      //   },
-      // ],
+    
     }
 
   },
@@ -131,6 +87,16 @@ export default {
   text-align: center;
 
 }
+serv-cont {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius:50px;
+}
 
 .services-container {
   background: rgb(238,174,202);
@@ -143,6 +109,19 @@ export default {
   border-radius:50px;
 
   
+}
+.card1 {
+  /* background-color: lightcyan; */
+  background-color:white;
+  text-align: center;
+  padding: 30px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  color: orchid;
+  font-size: x-small;
+  border: 3px solid  orchid;
+  border-radius: 50px;
 }
 
 .card {

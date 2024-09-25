@@ -3,8 +3,15 @@
         <div class="root-div">
      
         <p>
-        We provide top-notch car cleaning and detailing services to keep your vehicle looking spotless and running at its best. Whether it's a quick exterior wash or a complete interior and exterior detailing, our dedicated team uses high-quality products and modern equipment to give your car the care it deserves.
+          At Shineville Auto Spa, we take pride in delivering top-notch car cleaning and detailing services to ensure your vehicle not only looks spotless but also remains in peak condition. Our skilled professionals are committed to excellence, offering everything from a swift exterior wash to comprehensive interior and exterior detailing that leaves no surface untouched.
+</p>
+<p>
+Using only the finest, industry-leading products and the latest cutting-edge equipment, we go beyond just cleaning—we rejuvenate and protect your vehicle. From removing tough stains and grime to applying protective coatings that extend your car's lifespan, every service is designed to bring out the best in your vehicle.
+</p>
+<p>
+Whether you need a quick refresh or a deep, meticulous detailing job, our dedicated team treats your car with the care and precision it deserves. Your satisfaction is our top priority, and we strive to exceed expectations by delivering outstanding results every time.
         </p>
+        <h5>Shineville team</h5>
     </div>
   
 </template>
@@ -24,28 +31,32 @@ export default {
 
 <style scoped>
 .root-div{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-width: 400px;
-height: 200px;
+/* width: 400px; */
+height: 500px;
 border: 3px solid white;
 border-radius:100px;
-
-display: flex;
-justify-content: center;
-align-content: center;
+padding: 20px;
+padding-left: 10px;
+margin: 10px;
 align-items: center;
-/* margin-left: 500px; */
-/* padding-left: 500px; */
-height: 250px;
+/* text-align: center; */
 width: 100%; 
 font-size: x-large;
+color: darkcyan;
+/* font-family:fantasy; */
 }
 p {
   text-align: center;
   width: 700px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+}
+h5 {
+  /* color: white; */
+  font-family: ;
 }
 </style>
