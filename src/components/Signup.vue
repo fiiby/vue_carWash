@@ -76,16 +76,20 @@ const signup = async () => {
     justify-items: center;
     padding-top: 100px;
     margin-right: 700px;  /* this was 400 */
-    min-height: 200vh;
-    min-width: 50vh;
+    /* min-height: 200vh; */
+    /* min-width: 50vh; */
     } 
   
-  header, footer {
-  background-color:grey;
-    /* background-color:rgba(141, 21, 145, 0.911); */
-    color: white;
-    padding: 20px;
-  }
+    header, footer {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: white;
+  padding: 20px;
+  margin-left: 300px;
+  border:2px solid white;
+  border-radius: 100px;
+
+}
   
   main {
     /* flex-grow: 1; */
@@ -95,11 +99,12 @@ const signup = async () => {
   }
   
   form {
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  width: 700px;
+  padding: 30px;
+  margin-left:300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
   
   input {
     display: block;

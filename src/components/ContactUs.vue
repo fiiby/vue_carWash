@@ -55,12 +55,18 @@ export default {
 
 <style scoped>
 .container {
-    border-radius:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:100px;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
       padding-left: 50px;
       text-align: center;
       align-items: center;
+      padding: 20px;
+      width: 100%;
+      margin-top: 20px;
 
 
 }
@@ -71,21 +77,22 @@ h1 {
     color: orchid;
     align-content: center;
     width: 20%;
-    margin-left: 40%;
+    /* margin-left: 10%; */
     border-radius: 20px;
-    /* margin-bottom: 10px; */
-    /* padding-left: 300px; */
     background-color:white;
 }
  input {
+    width: 100%;
     padding: 10px;
-
-    width: 30%;
+    border-radius: 7px;
+    /* width: 30%; */
  }
  label {
-    font-size: large;
-    font-weight: bold;
+ 
+    font-size: medium;
+    font-weight:400;
     margin: 10px;
+    
  }
  button {
     padding: 20px;
@@ -94,6 +101,7 @@ h1 {
     cursor: pointer;
  }
  h3 {
-    font-size: small;
+    font-size: large;
+    color: blue;
  }
 </style>

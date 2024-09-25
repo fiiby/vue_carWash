@@ -5,8 +5,6 @@ import ServicesComponent from './components/ServicesComponent.vue'
 import Login from './components/Login.vue';
 import Signup from './components/Signup.vue';
 import ContactUs from './components/ContactUs.vue'
-import FooterComponent from './components/FooterComponent.vue';
-
 
 
 
@@ -19,7 +17,7 @@ export default {
     Login,
     Signup,
     ContactUs,
-    FooterComponent
+  
   },
 
   data() {
@@ -53,7 +51,6 @@ export default {
   <router-view />
   
   <!-- Footer is static and not affected by routing -->
-  <FooterComponent />
 
 </template>
 
