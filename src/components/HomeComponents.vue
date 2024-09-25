@@ -70,7 +70,7 @@ export default {
 .demo {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   padding: 30px;
-  border-radius: 20px;
+  border-radius: 100px;
   margin: 10px;
 }
 
@@ -102,7 +102,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-  border-radius: 50px;
+
 }
 
 .card {
@@ -110,8 +110,8 @@ section {
   text-align: center;
   padding: 30px;
   margin: 10px;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   color: orchid;
   font-size: x-small;
   border: 3px solid orchid;

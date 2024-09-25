@@ -55,8 +55,5 @@ p {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
 }
-h5 {
-  /* color: white; */
-  font-family: ;
-}
+
 </style>

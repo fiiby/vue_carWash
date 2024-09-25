@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 .container {
-    border-radius:50px;
+    border-radius:300px;
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
       padding-left: 50px;
@@ -92,5 +92,8 @@ h1 {
     border-radius: 20px;
     background-color: white;
     cursor: pointer;
+ }
+ h3 {
+    font-size: small;
  }
 </style>

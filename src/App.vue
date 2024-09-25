@@ -45,6 +45,7 @@ export default {
       </ul>
     </nav>
     <h2>{{ logo }}</h2>
+    
   </div>
 
   <!-- The router-view is where the routed component will be displayed -->
@@ -53,6 +54,7 @@ export default {
   
   <!-- Footer is static and not affected by routing -->
   <FooterComponent />
+
 </template>
 
 
@@ -66,7 +68,6 @@ export default {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     padding: 30px;
     border-radius:300px;
-     height: 100px;
     /* width: 100%;   */
     align-items: center;
     text-decoration: none;
@@ -118,7 +119,7 @@ h2 {
   width: 20%;
   padding: 40px;
   font-size:150%;
-font-family:'Courier New', Courier, monospace
+font-family:'Courier New', Courier, monospace;
 }
 
 .body-container {
