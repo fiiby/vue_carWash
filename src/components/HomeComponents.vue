@@ -16,6 +16,8 @@
         <li>Interior Cleaning</li>
         <li>Full Car Wash</li>
         <li>Paint Protection</li>
+        <li>Ceramic Coating</li>
+        <li>Windows Tinting</li>
       </ul>
     </section>
 
@@ -68,14 +70,18 @@ export default {
 
 <style scoped>
 .demo {
+  background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   padding: 30px;
   border-radius: 100px;
   margin: 10px;
+  width: 70%;
+  margin-left: 20%;
 }
 
 h1 {
   color: white;
+  text-align: center;
 }
 
 h2 {
@@ -87,7 +93,10 @@ h3 {
 }
 
 section {
+  margin-top: 0;
   margin-bottom: 20px;
+  width: 70%;
+  margin-left: 20%;
 }
 
 .root-div {
@@ -95,8 +104,6 @@ section {
 }
 
 .testimon-container {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

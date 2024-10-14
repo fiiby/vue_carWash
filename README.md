@@ -1,35 +1,7 @@
-# vue-project
+# shineVille Auto-spa App
 
-This template should help get you started developing with Vue 3 in Vite.
+# Description
+The Car Wash App is a riendly application that allows users to schedule car wash services at their preferred time. 
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+# Features
+1- sign up,login and contact 

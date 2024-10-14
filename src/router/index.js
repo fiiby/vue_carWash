@@ -2,10 +2,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeComponents from '@/components/HomeComponents.vue'
 import About from '@/components/About.vue'
 import Services from'@/components/ServicesComponent.vue'
-import Login from '@/components/Login.vue'
-import Signup from '@/components/Signup.vue'
 import ContactUs from '@/components/ContactUs.vue'
 import ServicesComponent from '@/components/ServicesComponent.vue'
+import serviceDetails from '@/components/serviceDetails.vue'
+import interiorDetails from '@/components/interiorDetails.vue'
+import fullCarWash from '@/components/fullCarWash.vue'
+import paintProtection from '@/components/paintProtection.vue'
+import ceramicCoating from '@/components/ceramicCoating.vue'
+import windowTinting from '@/components/windowTinting.vue'
 
 
 
@@ -28,24 +32,44 @@ const router = createRouter({
     },
     {
       path: '/services',
-      name: 'services',
+      name: 'servicesComponnent',
       component: ServicesComponent
     },
-    {
-      path: '/login',
-      name: 'login',
-      component: Login
 
-    },
-    {
-      path: '/signup',
-      name: 'signup',
-      component: Signup
-    },
     {
       path: '/contactUs',
       name: 'contact us',
       component: ContactUs
+    },
+    {
+      path: '/serviceDetails',
+      name: 'serviceDetails',
+      component: serviceDetails
+    },
+    {
+      path: '/interiorDetails',
+      name: 'interiorDetails',
+      component: interiorDetails
+    },
+    {
+      path: '/fullCarWash',
+      name: 'fullCarWash',
+      component: fullCarWash
+    },
+    {
+      path: '/paintProtection',
+      name: 'paintProtection',
+      component: paintProtection
+    },
+    {
+      path: '/ceramicCoating',
+      name: 'ceramicCoating',
+      component: ceramicCoating
+    },
+    {
+      path: '/windowTinting',
+      name: 'windowTinting',
+      component: windowTinting
     }
   ]
 })

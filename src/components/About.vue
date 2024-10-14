@@ -1,7 +1,7 @@
 <template>
       
         <div class="root-div">
-     
+     <h2>About Us</h2>
         <p>
           At Shineville Auto Spa, we take pride in delivering top-notch car cleaning and detailing services to ensure your vehicle not only looks spotless but also remains in peak condition. Our skilled professionals are committed to excellence, offering everything from a swift exterior wash to comprehensive interior and exterior detailing that leaves no surface untouched.
 </p>
@@ -11,7 +11,7 @@ Using only the finest, industry-leading products and the latest cutting-edge equ
 <p>
 Whether you need a quick refresh or a deep, meticulous detailing job, our dedicated team treats your car with the care and precision it deserves. Your satisfaction is our top priority, and we strive to exceed expectations by delivering outstanding results every time.
         </p>
-        <h5>Shineville team</h5>
+      
     </div>
   
 </template>
@@ -47,13 +47,17 @@ align-items: center;
 width: 100%; 
 font-size: x-large;
 color: darkcyan;
-/* font-family:fantasy; */
+width: 70%;
+margin-left: 20%;
 }
 p {
   text-align: center;
   width: 700px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+}
+h2 {
+    color: white;
 }
 
 </style>
